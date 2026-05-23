@@ -52,7 +52,7 @@ const Skills = () => (
             <h3 className="font-display text-lg font-bold text-foreground mb-4 pb-3 border-b border-gold/30">{cat.title}</h3>
             <div className="flex flex-wrap gap-2">
               {cat.skills.map((s) => (
-                <span key={s} className="text-xs font-medium px-3 py-1.5 rounded-full bg-card text-foreground/80 border border-border">
+                <span key={s} className="text-sm font-semibold px-3 py-1.5 rounded-full bg-card text-foreground/80 border border-border">
                   {s}
                 </span>
               ))}
