@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, GraduationCap, Download, Github } from "lucide-react";
+import { Mail, Phone, GraduationCap, Download, Github, Facebook } from "lucide-react";
 import linkedinIcon from "@/assets/linkedin.png";
 
 const Contact = () => (
@@ -47,6 +47,14 @@ const Contact = () => (
             className="inline-flex items-center justify-center gap-2 bg-gold text-accent-foreground px-8 py-3.5 rounded-lg font-semibold text-sm transition-all hover:brightness-110"
           >
             <img src={linkedinIcon} alt="LinkedIn" className="w-5 h-5" /> Connect on LinkedIn
+          </a>
+          <a
+            href="https://web.facebook.com/abadi.bulla"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-[#1877F2] text-white px-8 py-3.5 rounded-lg font-semibold text-sm transition-all hover:brightness-110"
+          >
+            <Facebook size={18} /> Facebook
           </a>
           <a
             href="https://github.com/ngasyeab"
