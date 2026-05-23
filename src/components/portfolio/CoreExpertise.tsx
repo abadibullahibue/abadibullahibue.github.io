@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
-import { Shield, Coins, Wheat, AlertTriangle, BarChart3, FileCheck, Users, Globe, Laptop } from "lucide-react";
+import { Construction, Bus, Sun, Cpu, Ruler, FlaskConical, Landmark, GraduationCap, Database } from "lucide-react";
 
 const items = [
-  { icon: Shield, title: "Humanitarian Program Management" },
-  { icon: Coins, title: "Cash & Voucher Assistance (CVA)" },
-  { icon: Wheat, title: "Food Security & Livelihoods" },
-  { icon: AlertTriangle, title: "Disaster Risk Reduction & Early Warning" },
-  { icon: BarChart3, title: "Market Systems Development" },
-  { icon: FileCheck, title: "MEAL Frameworks" },
-  { icon: Users, title: "Donor Compliance & Reporting" },
-  { icon: Globe, title: "Gender Equality & Social Inclusion" },
-  { icon: Laptop, title: "Digital Tools for Program Management" },
+  { icon: Construction, title: "Civil & Highway Engineering" },
+  { icon: Bus, title: "Transport Governance & Logistics" },
+  { icon: Sun, title: "Solar & Off-Grid Energy Systems" },
+  { icon: Cpu, title: "Digital Transit Automation" },
+  { icon: Ruler, title: "AutoCAD & Geometric Design" },
+  { icon: FlaskConical, title: "Materials & Geotechnical Testing" },
+  { icon: Landmark, title: "Public Policy & Capital Budgeting" },
+  { icon: Database, title: "Regional Data Center Operations" },
+  { icon: GraduationCap, title: "STEM Education & Curriculum Design" },
 ];
 
 const CoreExpertise = () => (

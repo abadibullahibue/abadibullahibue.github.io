@@ -1,13 +1,28 @@
 import { motion } from "framer-motion";
-import { FileText, BookOpen, ClipboardList, Radio, FlaskConical, Users } from "lucide-react";
+import { Bus, Sun, GraduationCap } from "lucide-react";
 
-const publications = [
-  { icon: FileText, text: "Produced quarterly, semi-annual, and annual reports for USAID, EU, WFP, and NGO-funded programs" },
-  { icon: ClipboardList, text: "Led baseline and endline surveys for food security and livelihoods programs using Kobo and ODK" },
-  { icon: BookOpen, text: "Contributed to policy briefs on livestock recovery, market systems development, and DRR" },
-  { icon: Radio, text: "Authored technical updates and situation reports for 20 woredas" },
-  { icon: FlaskConical, text: "Research: \"Skin Diseases and Their Effect on Hide Downgrading in Sheba Tannery\" — Mekelle University, 2010" },
-  { icon: Users, text: "Provided technical inputs to Food Security Cluster and JEOP consortium reports" },
+const projects = [
+  {
+    icon: Bus,
+    title: "Automated Transit Ticket Infrastructure",
+    objective: "Modernize transport terminal tracking and protect tariff revenues across 44 public regional bus hubs.",
+    execution: "Deployed electronic POS hardware, custom database syncing, and Odoo-linked dashboards converting legacy manual workflows into real-time digital operations.",
+    result: "Recovered ~100M ETB in administrative and operational revenue within a single year.",
+  },
+  {
+    icon: Sun,
+    title: "WHO Off-Grid Cold-Chain Energy Rollout",
+    objective: "Secure reliable alternative energy for 176 remote healthcare posts across Tigray.",
+    execution: "Designed mounting configurations for solar PV panels, charge controllers, and industrial battery banks engineered to withstand harsh conditions.",
+    result: "Guaranteed continuous power for vaccine storage, preventing medical spoilage in remote rural zones.",
+  },
+  {
+    icon: GraduationCap,
+    title: "National Curriculum Assessment Contribution",
+    objective: "Create high-standard evaluation tools for secondary physics and mathematics education.",
+    execution: "Authored 1,000+ matrix-aligned question codes and testing criteria matching the Ministry of Education's cognitive domains.",
+    result: "Scaled across multiple regional districts to standardize STEM student performance tracking.",
+  },
 ];
 
 const Publications = () => (
@@ -19,21 +34,35 @@ const Publications = () => (
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-2 text-center">Publications & Reports</h2>
+        <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-2 text-center">Projects & Impact</h2>
         <div className="w-16 h-1 bg-gold rounded mx-auto mb-12" />
       </motion.div>
-      <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-        {publications.map((p, i) => (
+      <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {projects.map((p, i) => (
           <motion.div
             key={i}
-            className="flex gap-4 bg-card rounded-xl p-6 border border-border hover:shadow-md transition-shadow"
+            className="bg-card rounded-xl p-6 border border-border hover:shadow-md transition-shadow flex flex-col"
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: i * 0.05 }}
+            transition={{ duration: 0.4, delay: i * 0.1 }}
           >
-            <p.icon className="text-gold flex-shrink-0 mt-1" size={22} />
-            <p className="text-foreground/80 text-sm leading-relaxed">{p.text}</p>
+            <p.icon className="text-gold mb-3" size={28} />
+            <h3 className="font-display text-lg font-bold text-foreground mb-3">{p.title}</h3>
+            <div className="space-y-3 text-sm">
+              <div>
+                <span className="text-gold font-semibold">Objective: </span>
+                <span className="text-foreground/75">{p.objective}</span>
+              </div>
+              <div>
+                <span className="text-gold font-semibold">Execution: </span>
+                <span className="text-foreground/75">{p.execution}</span>
+              </div>
+              <div>
+                <span className="text-gold font-semibold">Result: </span>
+                <span className="text-foreground/75">{p.result}</span>
+              </div>
+            </div>
           </motion.div>
         ))}
       </div>

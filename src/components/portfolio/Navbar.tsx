@@ -7,7 +7,7 @@ const navItems = [
   { label: "Experience", href: "#experience" },
   { label: "Achievements", href: "#achievements" },
   { label: "Skills", href: "#skills" },
-  { label: "Publications", href: "#publications" },
+  { label: "Projects", href: "#publications" },
   { label: "References", href: "#references" },
   { label: "Contact", href: "#contact" },
 ];
@@ -42,7 +42,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-4">
         <a href="#" className={`font-display text-xl font-bold ${scrolled ? "text-primary" : "text-primary-foreground"}`}>
-          Dr. Hindeya
+          Abadi Bulla
         </a>
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
