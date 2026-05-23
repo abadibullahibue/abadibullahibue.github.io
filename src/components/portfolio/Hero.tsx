@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Mail } from "lucide-react";
-import heroImage from "@/assets/hindeya.jpg";
+import heroImage from "@/assets/abadi.jpg";
 
 const Hero = () => {
   return (
@@ -18,13 +18,13 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <p className="text-gold font-body text-sm font-semibold tracking-[0.2em] uppercase mb-4">
-              Humanitarian & Development Leader
+              Civil Engineer · Transport & Infrastructure Leader
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
-              Dr. Hindeya Teame Woldu
+              Abadi Bulla Hibue
             </h1>
             <p className="text-primary-foreground/75 text-lg md:text-xl max-w-xl mb-8 font-body leading-relaxed">
-              15+ years driving large-scale humanitarian programs across food security, disaster risk management, and resilience-building — reaching <span className="text-gold font-semibold">800,000+ beneficiaries</span> in complex crisis settings.
+              20+ years bridging civil engineering, transport governance, and renewable energy — recovering <span className="text-gold font-semibold">100M ETB</span> in public revenue and powering <span className="text-gold font-semibold">176 off-grid clinics</span> across Tigray.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
@@ -51,7 +51,7 @@ const Hero = () => {
               <div className="absolute -inset-2 rounded-full bg-gold/30 blur-xl" />
               <img
                 src={heroImage}
-                alt="Dr. Hindeya Teame Woldu"
+                alt="Abadi Bulla Hibue"
                 className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-gold/50 shadow-2xl"
               />
             </div>

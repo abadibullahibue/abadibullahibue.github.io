@@ -3,25 +3,28 @@ import { Mail, Phone, User } from "lucide-react";
 
 const references = [
   {
-    name: "Temesgen Adnew",
-    title: "Relief & Humanitarian Program Director",
-    org: "Food for the Hungry Ethiopia",
-    email: "tadnew@fh.org",
-    phone: "+251-911-860-535",
+    name: "Etsub Girmay",
+    title: "General Manager",
+    org: "Global Consulting Architects and Engineers PLC",
+    context: "Direct corporate employer and engineering inspector across 5 years of heavy construction execution.",
+    email: null,
+    phone: "+251-914-022-814",
   },
   {
-    name: "Daniel Tilahun",
-    title: "Senior JEOP Program Manager",
-    org: "Food for the Hungry Ethiopia",
-    email: "dtilahun@fh.org",
-    phone: "+251-911-388-791",
+    name: "Milashu Negese, M.Eng",
+    title: "Chief Supervisor for Civil Engineering Works",
+    org: "Mekelle Municipality",
+    context: "Long-term municipal peer and transport planning reference.",
+    email: null,
+    phone: "+251-914-267-696",
   },
   {
-    name: "Yikunoamlak Teklebirhan",
-    title: "Senior Humanitarian Response Manager",
-    org: "CARE Ethiopia",
-    email: "yikunotekle21@gmail.com",
-    phone: "+251-914-732-083",
+    name: "Goitom Yisfa Alemu",
+    title: "Director, Information Management Office (IMO)",
+    org: "Mekelle University · Senior Lecturer, MIT",
+    context: "Institutional technology collaborator and infrastructure project reference.",
+    email: "goitom.yisfa@mu.edu.et",
+    phone: "+251-946-904-032",
   },
 ];
 
@@ -43,7 +46,7 @@ const References = () => (
         {references.map((ref, i) => (
           <motion.div
             key={i}
-            className="bg-secondary rounded-xl p-6 border border-border hover:shadow-md transition-shadow text-center"
+            className="bg-secondary rounded-xl p-6 border border-border hover:shadow-md transition-shadow text-center flex flex-col"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -54,16 +57,19 @@ const References = () => (
             </div>
             <h3 className="font-display text-lg font-bold text-foreground mb-1">{ref.name}</h3>
             <p className="text-gold text-sm font-semibold mb-1">{ref.title}</p>
-            <p className="text-muted-foreground text-sm mb-4">{ref.org}</p>
-            <div className="space-y-2 text-sm">
+            <p className="text-muted-foreground text-sm mb-3">{ref.org}</p>
+            <p className="text-foreground/60 text-xs italic mb-4">{ref.context}</p>
+            <div className="space-y-2 text-sm mt-auto">
+              {ref.email && (
+                <a
+                  href={`mailto:${ref.email}`}
+                  className="flex items-center justify-center gap-2 text-foreground/70 hover:text-primary transition-colors break-all"
+                >
+                  <Mail size={14} /> {ref.email}
+                </a>
+              )}
               <a
-                href={`mailto:${ref.email}`}
-                className="flex items-center justify-center gap-2 text-foreground/70 hover:text-primary transition-colors"
-              >
-                <Mail size={14} /> {ref.email}
-              </a>
-              <a
-                href={`tel:${ref.phone}`}
+                href={`tel:${ref.phone.replace(/[^+\d]/g, "")}`}
                 className="flex items-center justify-center gap-2 text-foreground/70 hover:text-primary transition-colors"
               >
                 <Phone size={14} /> {ref.phone}

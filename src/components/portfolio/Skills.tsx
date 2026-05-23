@@ -2,16 +2,28 @@ import { motion } from "framer-motion";
 
 const categories = [
   {
-    title: "Program Management",
-    skills: ["Humanitarian Program Design", "Cash & Voucher Assistance", "Food Security Programming", "Emergency Response Coordination", "Donor Compliance (USAID, WFP, EU)", "Budget Management ($5M+)", "Multi-Sectoral Coordination"],
+    title: "Civil & Highway Engineering",
+    skills: ["Flexible & Rigid Pavement Design", "Highway Geometric Layout", "Pavement Distress Diagnosis", "Structural Rehabilitation", "ERA Design Guidelines"],
   },
   {
-    title: "Digital Tools",
-    skills: ["GIS Mapping", "Smartsheet", "Odoo ERP", "Mobile Data Collection (Kobo, ODK)", "World-Link 3", "MIS Platforms", "ComCare"],
+    title: "Materials & Geotechnics",
+    skills: ["Proctor Compaction Tests", "California Bearing Ratio (CBR)", "Concrete Slump Testing", "USCS Soil Classification", "Aggregate Durability"],
   },
   {
-    title: "Data & Systems",
-    skills: ["MEAL Frameworks", "Results-Based Management", "Baseline/Endline Surveys", "Early Warning Systems", "Log Frames & SMART Indicators", "Evidence-Based Reporting"],
+    title: "Energy Architecture",
+    skills: ["Solar PV Array Sizing", "Deep-Cycle Battery Storage", "Inverter Waveform Alignment", "Charge Controller Calibration", "Cold-Chain Electrical Engineering"],
+  },
+  {
+    title: "Software & Technical Tools",
+    skills: ["AutoCAD Suite", "Odoo ERP", "Electronic POS Networks", "GPS Telematic Fleet Integration", "PhET Simulations", "MS Excel Engineering Modeling"],
+  },
+  {
+    title: "Executive Governance",
+    skills: ["Public Policy Formulation", "Transit Tariff Design", "Capital Infrastructure Budgeting", "Inter-Governmental Liaison", "300+ Staff Management"],
+  },
+  {
+    title: "STEM Education",
+    skills: ["Modern Physics Lecturing", "Applied Calculus", "Curriculum Design", "Examination Authoring", "Digital Laboratory Integration"],
   },
 ];
 
@@ -27,7 +39,7 @@ const Skills = () => (
         <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-2 text-center">Skills & Tools</h2>
         <div className="w-16 h-1 bg-gold rounded mx-auto mb-12" />
       </motion.div>
-      <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {categories.map((cat, i) => (
           <motion.div
             key={i}

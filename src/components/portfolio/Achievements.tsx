@@ -1,26 +1,26 @@
 import { motion } from "framer-motion";
-import { TrendingUp, Award, ShieldCheck, Target } from "lucide-react";
+import { TrendingUp, Sun, Bus, GraduationCap } from "lucide-react";
 
 const achievements = [
   {
+    icon: Bus,
+    title: "Digital Transit Transformation",
+    description: "Deployed automated Electronic Ticketing and POS systems across 44 regional bus terminals, converting manual workflows into a unified cloud tracking network with real-time fiscal oversight.",
+  },
+  {
     icon: TrendingUp,
-    title: "Program Leadership & Donor Compliance",
-    description: "Successfully managed multi-million-dollar food distribution, multipurpose cash transfer, and food security programs funded by USAID, EU, and WFP. Ensured full donor compliance and transparent reporting.",
+    title: "Public Revenue Recovery",
+    description: "Recovered approximately 100M ETB in operational public funds within 12 months by closing tariff leakages and enforcing transparent transport pricing compliance.",
   },
   {
-    icon: ShieldCheck,
-    title: "Emergency Response & Livelihoods Recovery",
-    description: "Led livestock and livelihoods emergency interventions in conflict-affected Tigray, including voucher-based animal health service delivery, directly benefiting thousands of households.",
+    icon: Sun,
+    title: "Off-Grid Cold-Chain Energy",
+    description: "Engineered and commissioned solar PV systems for 176 remote clinics under WHO restoration, guaranteeing continuous vaccine refrigeration in post-conflict rural Tigray.",
   },
   {
-    icon: Target,
-    title: "Early Warning & Disaster Preparedness",
-    description: "Established and strengthened community-based early warning systems across Eastern Tigray, producing actionable reports that informed disaster risk mitigation strategies.",
-  },
-  {
-    icon: Award,
-    title: "Capacity Building & Institutional Strengthening",
-    description: "Trained staff and local partners on RBM principles, safeguarding, and gender-sensitive monitoring, strengthening accountability mechanisms in conflict-affected contexts.",
+    icon: GraduationCap,
+    title: "National STEM Assessment",
+    description: "Authored and peer-validated 1,000+ matrix-standard Physics and Mathematics test items adopted into the Ethiopian National Curriculum's centralized examination framework.",
   },
 ];
 
