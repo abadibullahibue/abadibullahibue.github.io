@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, GraduationCap, Download, Github } from "lucide-react";
+import { Mail, Phone, GraduationCap, Download, Github, Facebook } from "lucide-react";
 import linkedinIcon from "@/assets/linkedin.png";
 
 const Contact = () => (
