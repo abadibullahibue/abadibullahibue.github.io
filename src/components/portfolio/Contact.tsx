@@ -17,7 +17,7 @@ const Contact = () => (
         <p className="text-primary-foreground/70 text-lg mb-10">
           Open to consulting, advisory, and leadership roles in infrastructure, transport governance, and renewable energy.
         </p>
-        <div className="grid sm:grid-cols-2 gap-6 max-w-xl mx-auto">
+        <div className="grid sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
           <a
             href="mailto:ngasyeab@gmail.com"
             className="flex items-center gap-3 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-xl p-5 text-primary-foreground hover:bg-primary-foreground/20 transition-colors"
@@ -26,6 +26,16 @@ const Contact = () => (
             <div className="text-left">
               <div className="text-xs text-primary-foreground/60">Email</div>
               <div className="text-sm font-medium">ngasyeab@gmail.com</div>
+            </div>
+          </a>
+          <a
+            href="mailto:abadibullahibue@gmail.com"
+            className="flex items-center gap-3 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-xl p-5 text-primary-foreground hover:bg-primary-foreground/20 transition-colors"
+          >
+            <Mail className="text-gold" size={22} />
+            <div className="text-left">
+              <div className="text-xs text-primary-foreground/60">Alt. Email</div>
+              <div className="text-sm font-medium">abadibullahibue@gmail.com</div>
             </div>
           </a>
           <a
