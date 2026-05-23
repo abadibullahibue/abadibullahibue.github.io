@@ -17,35 +17,35 @@ const Contact = () => (
         <p className="text-primary-foreground/70 text-lg mb-10">
           Open to consulting, advisory, and leadership roles in infrastructure, transport governance, and renewable energy.
         </p>
-        <div className="grid sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
+        <div className="grid sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
           <a
             href="mailto:ngasyeab@gmail.com"
-            className="flex items-center gap-3 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-xl p-5 text-primary-foreground hover:bg-primary-foreground/20 transition-colors"
+            className="flex items-center gap-3 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-xl p-4 text-primary-foreground hover:bg-primary-foreground/20 transition-colors min-w-0"
           >
-            <Mail className="text-gold" size={22} />
-            <div className="text-left">
+            <Mail className="text-gold shrink-0" size={20} />
+            <div className="text-left min-w-0 flex-1">
               <div className="text-xs text-primary-foreground/60">Email</div>
-              <div className="text-sm font-medium">ngasyeab@gmail.com</div>
+              <div className="text-[13px] font-medium truncate">ngasyeab@gmail.com</div>
             </div>
           </a>
           <a
             href="mailto:abadibullahibue@gmail.com"
-            className="flex items-center gap-3 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-xl p-5 text-primary-foreground hover:bg-primary-foreground/20 transition-colors"
+            className="flex items-center gap-3 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-xl p-4 text-primary-foreground hover:bg-primary-foreground/20 transition-colors min-w-0"
           >
-            <Mail className="text-gold" size={22} />
-            <div className="text-left">
+            <Mail className="text-gold shrink-0" size={20} />
+            <div className="text-left min-w-0 flex-1">
               <div className="text-xs text-primary-foreground/60">Alt. Email</div>
-              <div className="text-sm font-medium">abadibullahibue@gmail.com</div>
+              <div className="text-[13px] font-medium truncate">abadibullahibue@gmail.com</div>
             </div>
           </a>
           <a
             href="tel:+251932333439"
-            className="flex items-center gap-3 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-xl p-5 text-primary-foreground hover:bg-primary-foreground/20 transition-colors"
+            className="flex items-center gap-3 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-xl p-4 text-primary-foreground hover:bg-primary-foreground/20 transition-colors min-w-0"
           >
-            <Phone className="text-gold" size={22} />
-            <div className="text-left">
+            <Phone className="text-gold shrink-0" size={20} />
+            <div className="text-left min-w-0 flex-1">
               <div className="text-xs text-primary-foreground/60">Phone</div>
-              <div className="text-sm font-medium">+251 932 333 439</div>
+              <div className="text-[13px] font-medium truncate">+251 932 333 439</div>
             </div>
           </a>
         </div>
